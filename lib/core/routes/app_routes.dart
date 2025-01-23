@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class Routes {
   static const String splash = '/';
   static const String login = '/login';
