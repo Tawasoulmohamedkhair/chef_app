@@ -8,7 +8,7 @@ class SplashScreen extends StatelessWidget {
     return Center(
         child: Column(
       children: [
-        Image.asset('assets/images/logo.png'),
+        Image.asset('assets/logo.png'),
         Text('Chef App', style: Theme.of(context).textTheme.displayLarge),
       ],
     ));
