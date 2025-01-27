@@ -4,7 +4,7 @@ import 'package:chef_app/features/auth/presentaion/screens/change_language.dart'
 import 'package:chef_app/features/auth/presentaion/screens/login_screen.dart';
 import 'package:chef_app/features/auth/presentaion/screens/reset_password_screen.dart';
 import 'package:chef_app/features/auth/presentaion/screens/send_code_screen.dart';
-import 'package:chef_app/features/auth/presentaion/screens/splash_screen.dart';
+//import 'package:chef_app/features/auth/presentaion/screens/splash_screen.dart';
 import 'package:chef_app/features/menu/presentation/screens/add_meal_screen.dart';
 import 'package:chef_app/features/menu/presentation/screens/menu_home_screen.dart';
 import 'package:chef_app/features/profile/presentation/screens/change_password_screen.dart';
@@ -31,8 +31,8 @@ class Routes {
 class AppRoutes {
   static Route? generateRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case Routes.intitlRoute:
-        return MaterialPageRoute(builder: (_) => const SplashScreen());
+      // case Routes.intitlRoute:
+      //   return MaterialPageRoute(builder: (_) => const SplashScreen());
 
       case Routes.changeLanguage:
         return MaterialPageRoute(builder: (_) => const ChangeLanguageScreen());
