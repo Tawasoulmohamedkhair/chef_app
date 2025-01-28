@@ -1,1 +1,50 @@
-flutter/ephemeral
+# Flutter related
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/generated_plugin_registrant.dart
+
+# IntelliJ related
+**/.idea/
+**/*.iml
+**/.vscode/
+
+# VS Code related
+**/.vscode/
+
+# Xcode related
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/ephemeral/
+
+# Android related
+**/android/.gradle/
+**/android/app/debug.keystore
+**/android/key.properties
+
+# Web related
+**/web/.dart_tool/
+
+# Linux related
+**/linux/flutter/ephemeral/
+
+# macOS related
+**/macos/Flutter/ephemeral/
+
+# Windows related
+**/windows/flutter/ephemeral/
+
+# Firebase related
+**/ios/Runner/GoogleService-Info.plist
+**/android/app/google-services.json
+
+# Other
+**/.env
+**/.DS_Store
+**/.pub-cache/
+**/pubspec.lock
+**/.metadata

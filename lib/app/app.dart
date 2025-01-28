@@ -12,13 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
-      builder: (context,child)=>MaterialApp(
+      builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner:false,
         initialRoute: Routes.intitlRoute,
         title: 'Flutter Demo',
         theme: getAppTheme(),
         home: const SplashScreen(),
+
       ),
     );
-
   }
 }

@@ -18,7 +18,12 @@ class SplashScreen extends StatelessWidget {
             height: 120.h,
             width: 120.w,
           ),
-          Text('Chef App', style: Theme.of(context).textTheme.displayLarge),
+          SizedBox(height: 16.h),
+          Text('Chef App',
+              style: Theme.of(context)
+                  .textTheme
+                  .displayLarge!
+                  .copyWith(color: AppColors.blakbold)),
         ],
       )),
     );
