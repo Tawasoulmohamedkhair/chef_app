@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Customeimage extends StatelessWidget {
-  Customeimage(
+  const Customeimage(
       {super.key,
       required this.imagepath,
       this.height,
