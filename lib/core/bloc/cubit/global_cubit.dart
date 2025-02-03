@@ -1,5 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:chef_app/core/bloc/cubit/global_state.dart';
+import 'package:chef_app/core/database/cache/cache_helper.dart';
+import 'package:chef_app/core/services/service_locator.dart';
 
 // class GlobalCubit extends Cubit<GlobalState> {
 //   GlobalCubit() : super(GlobalInitial());
@@ -20,12 +22,21 @@ class GlobalCubit extends Cubit<GlobalState> {
   bool isArabic = false;
   String languageCode = 'en'; // Default to English
 
-  void changeLanguage(String selectedLanguage) {
+  void changeLanguage(String selectedLanguage) async {
     emit(ChangeLanguageLoading());
     if (languageCode != selectedLanguage) {
       languageCode = selectedLanguage;
-      isArabic = (languageCode == 'ar'); // Update flag
+      // isArabic = (languageCode == 'ar'); // Update flag
+      await serviceLoactor<CacheHelper>().cacheLanguage(selectedLanguage);
       emit(ChangeLanguageSucess());
     }
+  }
+
+
+  void getcachedlanguage() {
+    emit(ChangeLanguageLoading());
+    final cachedlanguage = serviceLoactor<CacheHelper>().getCachedLanguage();
+    languageCode = cachedlanguage;
+    emit(ChangeLanguageSucess());
   }
 }

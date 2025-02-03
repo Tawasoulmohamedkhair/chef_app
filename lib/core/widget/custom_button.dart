@@ -5,15 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
-    required this.height,
-    required this.width,
-    required this.color,
+    this.height = 48,
+   this.width=double.infinity,
+     this.color,
     required this.text,
-    this.onPressed,
+   required this.onPressed,
   });
-  final double height;
+ final  double height;
   final double width;
-  final Color color;
+  final Color? color;
   final String text;
   final void Function()? onPressed;
 

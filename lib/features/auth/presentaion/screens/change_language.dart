@@ -37,7 +37,7 @@ class ChangeLanguageScreen extends StatelessWidget {
                     width: 120.w,
                   ),
                   SizedBox(height: 16.h),
-                  Text(AppString.welcometoChefApp.tr(context),
+                  Text(AppString.welcomeToChefApp.tr(context),
                       style: Theme.of(context)
                           .textTheme
                           .displayLarge!

@@ -1,9 +1,9 @@
 import 'package:chef_app/core/local/app_local.dart';
 import 'package:chef_app/core/routes/app_routes.dart';
-import 'package:chef_app/core/routes/commons.dart';
 import 'package:chef_app/core/utils/app_assets.dart';
 import 'package:chef_app/core/utils/app_colors.dart';
 import 'package:chef_app/core/utils/app_string.dart';
+import 'package:chef_app/core/utils/commons.dart';
 import 'package:chef_app/core/widget/custome_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if (!mounted) return;
       navigate(
         context: context,
-        routeName: Routes.changeLanguage,
+        route: Routes.changeLanguage,
       );
     });
   }

@@ -6,6 +6,9 @@ class AppColors {
   static const blakbold = Color(0xFF000000);
   static const orangetext = Color(0xFFFB5607);
   static const whitetext = Color(0xFFFFFFFF);
+  static const red = Colors.red;
+  static const green = Colors.green;
+
 
   static const greydark = Color(0xFF7D8FAB);
   static const greytext = Color(0xFF9D9FA0);
